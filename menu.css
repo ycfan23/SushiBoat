@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-image: url(/img/base.png);
+  background-image: url(img/base.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
