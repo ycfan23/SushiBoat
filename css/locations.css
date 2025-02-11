@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/base.png);
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  font-family: Andale Mono, monospace,sans-serif;
+  margin: 0;
+  min-width: 375px;
+}
+
+header {
+  position: relative;
+  height: 20%;
+}
+
+/* navbar */
+.nav_main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 65%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.links li {
+  list-style: none;
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.links li a::before {
+  content: "";
+  background: linear-gradient(to right, #ffd900, #ffe602);;
+  height:5px;
+  width: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.links li a::before {
+  bottom: -7px;
+}
+
+.links li a:hover::before
+{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#toggle_button {
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  display: none;
+}
+
+#logo_name {
+  font-size: 3rem;
+  font-family: Chalkduster, fantasy;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-left: 20px;
+  white-space: nowrap;
+  /* border: 1px solid yellow; */
+}
+
+#logo_name a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Dropdown */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  right: 2rem;
+  line-height: 4rem;
+  background: rgba(9, 1, 1, 0.465);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  top: 60px;
+  height: 0;
+  transition: height .2s ease-in-out;
+}
+
+.dropdown_menu.open {
+  height: 260px;
+}
+
+.dropdown_menu ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.dropdown_menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Body */
+.locations_section {
+  width: 100%;
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 5rem;
+  overflow: auto;
+  padding-bottom: 7rem;
+
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 2rem 0 1.5rem;
+}
+
+.highlight_container, .highlight {
+  position: relative;
+}
+
+.highlight_container {
+  display: inline-block;
+}
+
+.highlight_container::before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin-left: -5px;
+  margin-right: 3px;
+  position: absolute;
+  background: #ffd500;
+  transform: rotate(1deg);
+  bottom: -15px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 3px 3px 3px 3px;
+}
+
+.highlight_container .location_title {
+  font-size: 2rem;
+}
+
+.location_one {
+  width: 80%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hour_location_info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.2rem;
+  width: 42%;
+}
+
+.hour_location_info > div > p, .hour_location_info tr td{
+  padding: 0.3rem 2rem ;
+}
+
+.location_name {
+  font-size: 1.5rem;
+  color: #ff4803;
+}
+
+
+
+
+
+/* MEDIA Query */
+
+@media (max-width: 1354px) {
+  #logo_name {
+    font-size: 2.5em;
+  }
+
+  .links{
+    display: none;
+  }
+
+  .dropdown_menu, #toggle_button {
+    display: block;
+  }
+}
+
+@media (max-width: 881px) {
+  #logo_name {
+    font-size: 2.0em;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown_menu {
+    width: 90%;
+    left: 1rem;
+    top: 8rem;
+    overflow: hidden;
+  }
+
+  .nav_main {
+    padding-left: 2rem;
+  }
+}

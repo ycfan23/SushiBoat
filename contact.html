@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sushi Boat Home Page</title>
+    <link rel="stylesheet" type="text/css"  href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Charm:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav_main">
+        <ul class="links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./locations.html">Locations</a></li>
+          <li><a href="https://www.toasttab.com/sushi-boat-1500-elm-street/giftcards?utm_source=undefined&utm_content=online--sushi-boat-1500-elm-street&utm_medium=toast_sites&utm_campaign=giftcards">Gift Cards</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div id="toggle_button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown_menu">
+        <ul class="dropdown_menu_links">
+          <li><a href="about">About</a></li>
+          <li><a href="menu">Menu</a></li>
+          <li><a href="locations">Locations</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contact_container">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="contact_title_container">
+          <h3>Get in touch</h3>
+          <p>Got questions about our space, staff or menu? Ask us! We’re dedicated to helping you get the answers you need and we’d love to hear from you!</p>
+        </div>
+
+        <div class="form_section">
+          <div class="input_section">
+            <input type="hidden" name="access_key" value="24b9c507-701f-4652-9da4-b52f76244f2f">
+            <input type="text" name="name" placeholder="Your Name" class="contact_input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact_input" required>
+            <textarea name="message" placeholder="Your Message" class="contact_input" required></textarea>
+
+            <div class="btn_wrapper">
+              <button type="submit" class="submit_btn">
+                <span>Submit</span>
+                <div class="success">
+                  <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+                  <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+          </div>
+
+          <div class="img_section">
+            <img src="/img/sushi_cartoon_three.png" class="contact_img"/>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
