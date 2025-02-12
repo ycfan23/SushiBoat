@@ -109,19 +109,19 @@ header {
   display: none;
   position: absolute;
   width: 200px;
-  right: 2rem;
+  right: 4rem;
   line-height: 4rem;
   background: rgba(9, 1, 1, 0.465);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
-  top: 60px;
+  top: 130px;
   height: 0;
   transition: height .2s ease-in-out;
 }
 
 .dropdown_menu.open {
-  height: 260px;
+  height: 390px;
 }
 
 .dropdown_menu ul li{
@@ -135,6 +135,10 @@ header {
 .dropdown_menu ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+.dropdown_menu ul li a:hover {
+  cursor: pointer;
 }
 
 /* Body */
