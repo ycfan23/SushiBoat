@@ -218,6 +218,14 @@ header {
 .fa-brands.fa-facebook, .fa-brands.fa-instagram {
   color: #fff;
   padding: 10px 7px;
+  transition:.5s;
+}
+
+.fa-brands.fa-facebook:hover {
+  transform:scale(1.5);
+}
+.fa-brands.fa-brands.fa-instagram:hover {
+  transform:scale(1.5);
 }
 
 
