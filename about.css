@@ -73,7 +73,6 @@ header {
   transform-origin: left;
 }
 
-
 #toggle_button {
   /* border: 1px solid yellow; */
   display: flex;
@@ -87,52 +86,36 @@ header {
   display: none;
 }
 
-#logo_name {
-  font-size: 3rem;
-  font-family: Chalkduster, fantasy;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 40%;
-  margin-left: 20px;
-  white-space: nowrap;
-  /* border: 1px solid yellow; */
-}
-
-#logo_name a {
-  text-decoration: none;
-  color: #fff;
-}
-
 /* Dropdown */
 .dropdown_menu {
   display: none;
   position: absolute;
+  height: 0;
   width: 200px;
   right: 4rem;
-  line-height: 4rem;
   background: rgba(9, 1, 1, 0.465);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   overflow: hidden;
-  top: 130px;
-  height: 0;
+  top: 70px;
   transition: height .2s ease-in-out;
+  z-index: 1;
 }
 
 .dropdown_menu.open {
-  height: 390px;
+  height: 310px;
 }
 
-.dropdown_menu ul li{
+.dropdown_menu li{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 100;
+  padding:0.7rem;
 }
 
-.dropdown_menu ul li a {
+.dropdown_menu li a {
   text-decoration: none;
   color: #fff;
 }
@@ -140,10 +123,12 @@ header {
 /* Body */
 .center_container {
   width: 100%;
-  height: 80vh;
+  height: 70%;
   color: #fff;
   display: flex;
   position: relative;
+  overflow: auto;
+
 }
 
 .center_container .store_img {
@@ -160,7 +145,7 @@ header {
 }
 
 .center_container h3 {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
   display: flex;
@@ -209,13 +194,40 @@ header {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
+/* footer */
+.footer_container {
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid yellow; */
+}
+
+.icon_container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 1.1rem;
+  right: 1rem;
+}
+
+.fa-brands.fa-facebook, .fa-brands.fa-instagram {
+  color: #fff;
+  padding: 10px 7px;
+  transition:.5s;
+}
+
+.fa-brands.fa-facebook:hover {
+  transform:scale(1.5);
+  color: #034cff;
+}
+.fa-brands.fa-brands.fa-instagram:hover {
+  transform:scale(1.5);
+  color: #ff03e8;
+}
+
 
 /* MEDIA Query */
 
 @media (max-width: 1354px) {
-  #logo_name {
-    font-size: 2.5em;
-  }
 
   .links{
     display: none;
@@ -224,23 +236,22 @@ header {
   .dropdown_menu, #toggle_button {
     display: block;
   }
-}
 
-@media (max-width: 881px) {
-  #logo_name {
-    font-size: 2.0em;
+  .about h3 {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .center_container {
+    flex-direction: column;
+  }
+
+  .center_container .store_img {
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 400px) {
-  .dropdown_menu {
-    width: 90%;
-    left: 1rem;
-    top: 8rem;
-    overflow: hidden;
-  }
-
-  .nav_main {
-    padding-left: 2rem;
-  }
-}

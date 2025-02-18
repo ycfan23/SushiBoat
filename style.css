@@ -122,8 +122,6 @@ header {
 
 .dropdown_menu.open {
   height: 310px;
-  /* width: auto; */
-
 }
 
 .dropdown_menu li{
@@ -246,6 +244,7 @@ header {
   .dropdown_menu, #toggle_button {
     display: block;
   }
+
 }
 
 /* @media (max-width: 881px) {

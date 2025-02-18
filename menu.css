@@ -266,6 +266,36 @@ td {
   color: #ffd500;
 }
 
+/* footer */
+.footer_container {
+  width: 100%;
+  height: 10%;
+  /* border: 1px solid yellow; */
+}
+
+.icon_container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 1.1rem;
+  right: 1rem;
+}
+
+.fa-brands.fa-facebook, .fa-brands.fa-instagram {
+  color: #fff;
+  padding: 10px 7px;
+  transition:.5s;
+}
+
+.fa-brands.fa-facebook:hover {
+  transform:scale(1.5);
+  color: #034cff;
+}
+.fa-brands.fa-brands.fa-instagram:hover {
+  transform:scale(1.5);
+  color: #ff03e8;
+}
+
 /* MEDIA Query */
 
 @media (max-width: 1354px) {
