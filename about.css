@@ -120,6 +120,10 @@ header {
   color: #fff;
 }
 
+.dropdown_menu li a:hover {
+  color: #ffe603;
+}
+
 /* Body */
 .center_container {
   width: 100%;
