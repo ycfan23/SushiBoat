@@ -271,7 +271,7 @@ header {
   }
 
   .dropdown_menu.open {
-    height: 65vh;
+    height: 70vh;
     width: 90vw;
   }
 
@@ -280,7 +280,7 @@ header {
   }
 
   .dropdown_menu li {
-    padding: 2rem;
+    padding: 2.1rem;
   }
 
   img {
@@ -293,5 +293,17 @@ header {
 
   .center_container p {
     font-size: 0.7rem;
+  }
+
+  header {
+    height: 15%;
+  }
+
+  .center_container {
+    height: 75%;
+  }
+
+  .center_container .about {
+    padding: 0 2rem
   }
 }
