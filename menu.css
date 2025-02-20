@@ -349,4 +349,12 @@ td {
   .left_menu, .right_menu {
     width: 70%;
   }
+
+  header {
+    height: 15%;
+  }
+
+  .menu_container {
+    height: 75%;
+  }
 }
