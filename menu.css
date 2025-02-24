@@ -329,15 +329,16 @@ td {
     padding: 2.1rem;
   }
 
-  .left_menu, .right_menu {
-    width: 70%;
-  }
-
   header {
     height: 15%;
   }
 
   .menu_container {
     height: 75%;
+  }
+
+  .left_menu, .right_menu, .three_left_menu, .three_mid_menu, .three_right_menu
+  {
+    width: 100%;
   }
 }
