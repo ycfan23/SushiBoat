@@ -325,6 +325,10 @@ textarea {
   .dropdown_menu, #toggle_button {
     display: block;
   }
+
+  .img_section {
+    display: none;
+  }
 }
 
 @media (max-width: 506px) {
@@ -340,6 +344,18 @@ textarea {
 
   .dropdown_menu li {
     padding: 2.1rem;
+  }
+
+  header {
+    height: 15%;
+  }
+
+  .contact_container {
+    height: 75%;
+  }
+
+  form {
+    width: 75%;
   }
 
 }
