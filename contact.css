@@ -358,4 +358,8 @@ textarea {
     width: 75%;
   }
 
+  .contact_input {
+    min-width: 300px;
+  }
+
 }
