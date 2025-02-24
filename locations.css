@@ -132,7 +132,7 @@ header {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
   overflow: auto;
   padding-bottom: 7rem;
 
@@ -293,4 +293,8 @@ header {
   .locations_section {
     height: 75%;
   }
+
+  .highlight_container .location_title {
+    font-size: 1.6rem;
+}
 }
